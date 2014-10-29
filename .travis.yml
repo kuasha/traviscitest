@@ -1,0 +1,18 @@
+language: python
+python:
+  - "2.7"
+# command to install dependencies
+install:
+  - pip install mock
+  - pip install requests
+  - npm install karma
+  - npm install karma-jasmine
+  - npm install karma-coverage
+  - npm install karma-phantomjs-launcher
+  - npm install bower
+  - bower install
+
+# command to run tests
+script:
+  - python setup.py test
+  - karma start --single-run --browsers PhantomJS samplejsapp/test/karma.conf.js
