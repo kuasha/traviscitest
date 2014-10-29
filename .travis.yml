@@ -5,9 +5,10 @@ python:
 install:
   - pip install mock
   - pip install requests
-  
+
 before_script:
   - npm install karma
+  - npm install karma-cli
   - npm install karma-jasmine
   - npm install karma-coverage
   - npm install karma-phantomjs-launcher
