@@ -9,8 +9,6 @@ install:
   - npm install karma-jasmine
   - npm install karma-coverage
   - npm install karma-phantomjs-launcher
-  - npm install bower
-  - bower install
 
 # command to run tests
 script:
